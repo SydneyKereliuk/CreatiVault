@@ -21,6 +21,6 @@ public class ExampleInstrumentedTest {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getTargetContext();
 
-        assertEquals("com.kereliukfamily.watchlogs", appContext.getPackageName());
+        assertEquals("com.kereliukfamily.creativault", appContext.getPackageName());
     }
 }
