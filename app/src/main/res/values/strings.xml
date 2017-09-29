@@ -17,4 +17,16 @@
     <string name="title_activity_landing_page">LandingPage</string>
     <string name="dummy_button">Dummy Button</string>
     <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="characters">Characters</string>
+    <string name="add_character">Add Character</string>
+    <string name="add_setting">Add Setting</string>
+    <string name="birthdate">Birthdate</string>
+    <string name="complex">Complex</string>
+    <string name="create_character">Create Character</string>
+    <string name="feminine">Feminine</string>
+    <string name="loud">Loud</string>
+    <string name="masculine">Masculine</string>
+    <string name="name">Name</string>
+    <string name="quiet">Quiet</string>
+    <string name="simple">Simple</string>
 </resources>

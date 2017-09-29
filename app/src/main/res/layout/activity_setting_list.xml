@@ -4,22 +4,22 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.kereliukfamily.creativault.CharacterList">
+    tools:context="com.kereliukfamily.creativault.SettingList">
 
     <Button
-        android:id="@+id/addCharacterButton"
+        android:id="@+id/addSettingButton"
         android:layout_width="0dp"
         android:layout_height="48dp"
-        android:layout_marginEnd="14dp"
-        android:layout_marginLeft="14dp"
-        android:layout_marginRight="14dp"
-        android:layout_marginStart="14dp"
-        android:layout_marginTop="21dp"
-        android:text="@string/add_character"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:layout_constraintLeft_creator="1"
+        android:text="@string/add_setting"
+        tools:layout_constraintTop_creator="1"
         tools:layout_constraintRight_creator="1"
-        tools:layout_constraintTop_creator="1" />
+        android:layout_marginStart="14dp"
+        android:layout_marginEnd="14dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="16dp"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginLeft="14dp"
+        android:layout_marginRight="14dp" />
 </android.support.constraint.ConstraintLayout>

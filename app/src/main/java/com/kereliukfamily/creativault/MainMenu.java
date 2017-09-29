@@ -1,9 +1,10 @@
 package com.kereliukfamily.creativault;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-
-import com.kereliukfamily.creativault.R;
+import android.view.View;
+import android.widget.Button;
 
 public class MainMenu extends AppCompatActivity {
 
@@ -11,5 +12,22 @@ public class MainMenu extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main_menu);
+
+        Button settingButton = (Button) findViewById(R.id.settingButton);
+        settingButton.setOnClickListener(new Button.OnClickListener(){
+            public void onClick(View v){
+                Intent intent = new Intent(getBaseContext(),SettingList.class);
+                startActivity(intent);
+            }
+        });
+
+        Button characterButton = (Button) findViewById(R.id.characterButton);
+        characterButton.setOnClickListener(new Button.OnClickListener(){
+            public void onClick(View v){
+                Intent intent = new Intent(getBaseContext(),CharacterList.class);
+                startActivity(intent);
+            }
+        });
+
     }
 }

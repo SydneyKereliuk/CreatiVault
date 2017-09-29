@@ -6,20 +6,19 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-public class CharacterList extends AppCompatActivity {
+public class AddSetting extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_character_list);
+        setContentView(R.layout.activity_add_setting);
 
-        Button button = (Button) findViewById(R.id.addCharacterButton);
-        button.setOnClickListener(new Button.OnClickListener(){
+        Button createButton = (Button) findViewById(R.id.createSettingButton);
+        createButton.setOnClickListener(new Button.OnClickListener(){
             public void onClick(View v){
-                Intent intent = new Intent(getBaseContext(),AddCharacter.class);
+                Intent intent = new Intent(getBaseContext(),SettingList.class);
                 startActivity(intent);
             }
         });
-
     }
 }

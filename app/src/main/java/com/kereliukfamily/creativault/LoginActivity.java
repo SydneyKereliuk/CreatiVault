@@ -5,9 +5,7 @@ import android.animation.AnimatorListenerAdapter;
 import android.annotation.TargetApi;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
-
 import android.os.AsyncTask;
-
 import android.os.Build;
 import android.os.Bundle;
 import android.text.TextUtils;
@@ -218,7 +216,7 @@ public class LoginActivity extends AppCompatActivity{
             showProgress(false);
 
             if (success) {
-                Intent intent = new Intent(getBaseContext(),LandingPage.class);
+                Intent intent = new Intent(getBaseContext(),MainMenu.class);
                 startActivity(intent);
             } else {
                 boolean accountExists = false;
