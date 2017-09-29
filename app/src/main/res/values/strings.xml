@@ -29,4 +29,10 @@
     <string name="name">Name</string>
     <string name="quiet">Quiet</string>
     <string name="simple">Simple</string>
+    <string name="calendar_type">Calendar Type</string>
+    <string name="create_setting">Create Setting</string>
+    <string name="custom">Custom</string>
+    <string name="setting_name">Setting Name</string>
+    <string name="standard">Standard</string>
+    <string name="main_menu">Main Menu</string>
 </resources>

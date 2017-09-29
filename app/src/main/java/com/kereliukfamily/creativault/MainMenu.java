@@ -12,22 +12,17 @@ public class MainMenu extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main_menu);
+    }
 
-        Button settingButton = (Button) findViewById(R.id.settingButton);
-        settingButton.setOnClickListener(new Button.OnClickListener(){
-            public void onClick(View v){
-                Intent intent = new Intent(getBaseContext(),SettingList.class);
-                startActivity(intent);
-            }
-        });
+    public void goToSetting(View v)
+    {
+        Intent settingListIntent = new Intent(this ,SettingList.class);
+        startActivity(settingListIntent);
+    }
 
-        Button characterButton = (Button) findViewById(R.id.characterButton);
-        characterButton.setOnClickListener(new Button.OnClickListener(){
-            public void onClick(View v){
-                Intent intent = new Intent(getBaseContext(),CharacterList.class);
-                startActivity(intent);
-            }
-        });
-
+    public void goToCharacter(View v)
+    {
+        Intent characterListIntent = new Intent(this ,CharacterList.class);
+        startActivity(characterListIntent);
     }
 }

@@ -12,14 +12,17 @@ public class CharacterList extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_character_list);
+    }
 
-        Button button = (Button) findViewById(R.id.addCharacterButton);
-        button.setOnClickListener(new Button.OnClickListener(){
-            public void onClick(View v){
-                Intent intent = new Intent(getBaseContext(),AddCharacter.class);
-                startActivity(intent);
-            }
-        });
+    public void goToAddCharacter(View v)
+    {
+        Intent addCharacterIntent = new Intent(this ,AddCharacter.class);
+        startActivity(addCharacterIntent);
+    }
 
+    public void goToMainMenu(View v)
+    {
+        Intent mainMenuIntent = new Intent(this ,MainMenu.class);
+        startActivity(mainMenuIntent);
     }
 }

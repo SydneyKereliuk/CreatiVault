@@ -35,13 +35,13 @@ public class AddCharacter extends AppCompatActivity {
         day = calendar.get(Calendar.DAY_OF_MONTH);
         showDate(year, month+1, day);
 
-        Button createButton = (Button) findViewById(R.id.createCharacterButton);
+        /*Button createButton = (Button) findViewById(R.id.createCharacterButton);
         createButton.setOnClickListener(new Button.OnClickListener(){
             public void onClick(View v){
-                Intent intent = new Intent(getBaseContext(),CharacterList.class);
-                startActivity(intent);
+                Intent characterListIntent = new Intent(getBaseContext(),CharacterList.class);
+                startActivity(characterListIntent);
             }
-        });
+        });*/
 
         EditText birthday = (EditText) findViewById(R.id.birthday);
         birthday.setOnClickListener(new Button.OnClickListener(){
@@ -85,5 +85,11 @@ public class AddCharacter extends AppCompatActivity {
     private void showDate(int year, int month, int day) {
         dateView.setText(new StringBuilder().append(day).append("/")
                 .append(month).append("/").append(year));
+    }
+
+    public void goToCharacterList(View v)
+    {
+        Intent characterListIntent = new Intent(getBaseContext(),CharacterList.class);
+        startActivity(characterListIntent);
     }
 }

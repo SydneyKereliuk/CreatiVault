@@ -11,15 +11,18 @@ public class SettingList extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_character_list);
+        setContentView(R.layout.activity_setting_list);
+    }
 
-        Button button = (Button) findViewById(R.id.addSettingButton);
-        button.setOnClickListener(new Button.OnClickListener(){
-            public void onClick(View v){
-                Intent intent = new Intent(getBaseContext(),AddCharacter.class);
-                startActivity(intent);
-            }
-        });
+    public void goToAddSetting(View v)
+    {
+        Intent addSettingIntent = new Intent(this,AddSetting.class);
+        startActivity(addSettingIntent);
+    }
 
+    public void goToMainMenu(View v)
+    {
+        Intent mainMenuIntent = new Intent(this ,MainMenu.class);
+        startActivity(mainMenuIntent);
     }
 }

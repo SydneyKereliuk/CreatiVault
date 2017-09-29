@@ -12,13 +12,11 @@ public class AddSetting extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_add_setting);
+    }
 
-        Button createButton = (Button) findViewById(R.id.createSettingButton);
-        createButton.setOnClickListener(new Button.OnClickListener(){
-            public void onClick(View v){
-                Intent intent = new Intent(getBaseContext(),SettingList.class);
-                startActivity(intent);
-            }
-        });
+    public void goToSettingList(View v)
+    {
+        Intent settingListIntent = new Intent(this ,SettingList.class);
+        startActivity(settingListIntent);
     }
 }
