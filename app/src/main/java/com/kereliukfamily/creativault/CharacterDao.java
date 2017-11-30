@@ -12,16 +12,16 @@ import android.arch.persistence.room.Update;
 
 import java.util.List;
 
-public interface CharacterDoa {
+public interface CharacterDao {
     @Insert(onConflict = OnConflictStrategy.REPLACE)
-    void addTrophy(Trophy trophy);
+    void addCharacter(Character character);
 
     @Query("SELECT * FROM trophy WHERE userId=:userId")
-    List<Trophy> findTrophiesForUser(int userId);
+    List<Character> findCharactersForUser(int userId);
 
     @Update(onConflict = OnConflictStrategy.REPLACE)
-    void updateTrophy(Trophy trophy);
+    void updateCharacter(Character haracter);
 
-    @Query("delete from trophy where id = :id")
+    @Query("delete from character where id = :id")
     void delete(long id);
 }
