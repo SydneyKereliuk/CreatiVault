@@ -9,26 +9,34 @@ import android.arch.persistence.room.ForeignKey;
 import android.arch.persistence.room.Index;
 import android.arch.persistence.room.PrimaryKey;
 
-@Entity(tableName = "trophy",
+import java.util.Date;
+
+@Entity(tableName = "character",
         foreignKeys = {
                 @ForeignKey(
                         entity = User.class,
                         parentColumns = "id",
-                        childColumns = "userId",
+                        childColumns = "userID",
                         onDelete = ForeignKey.CASCADE
                 )},
         indices = { @Index(value = "id")}
 )
 public class Character {
     @PrimaryKey(autoGenerate = true)
-    long id;
+    long characterID;
 
-    public long userId;
+    public long userID;
 
-    String description;
+    String name;
+    double femMasc;
+    double simpleComplex;
+    double quietLoud;
 
-    public Character(long userId, String description) {
-        this.userId = userId;
-        this.description = description;
+    public Character(long userID, String name, double femMasc, double simpleComplex, double quietLoud) {
+        this.userID = userID;
+        this.name = name;
+        this.femMasc = femMasc;
+        this.simpleComplex = simpleComplex;
+        this.quietLoud = quietLoud;
     }
 }

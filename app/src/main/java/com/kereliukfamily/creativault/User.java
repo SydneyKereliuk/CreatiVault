@@ -1,6 +1,8 @@
 package com.kereliukfamily.creativault;
 
 import android.arch.persistence.room.Entity;
+import android.arch.persistence.room.ForeignKey;
+import android.arch.persistence.room.Index;
 import android.arch.persistence.room.PrimaryKey;
 /**
  * Created by skereliuk6174 on 11/22/2017.
@@ -8,17 +10,16 @@ import android.arch.persistence.room.PrimaryKey;
 
 @Entity
 public class User {
-    @PrimaryKey
-    public final int id;
-    public String name;
-    public int level;
-    public long skillPoints;
+    @PrimaryKey(autoGenerate = true)
+    long userID;
+
+    public String email;
+    public String password;
 
 
-    public User(int id, String name, long skillPoints) {
-        this.id = id;
-        this.name = name;
-        this.skillPoints  = skillPoints;
-        this.level = 0;
+    public User(long userID, String email, String password) {
+        this.userID = userID;
+        this.email = email;
+        this.password = password;
     }
 }
