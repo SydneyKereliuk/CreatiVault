@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "939665961735",
+    "firebase_url": "https://creativault-c4c7f.firebaseio.com",
+    "project_id": "creativault-c4c7f",
+    "storage_bucket": "creativault-c4c7f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:939665961735:android:77bd9638c94ef7a3",
+        "android_client_info": {
+          "package_name": "com.kereliukfamily.creativault"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "939665961735-ri1lc89hoodevs75ermfjaidp55hj0ou.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAZxwkfo9IQNqKx6v5AV4t7BLN90LWBTsQ"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
